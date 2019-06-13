@@ -3,6 +3,6 @@ kind: Pod
 metadata:
   name: pr
 spec:
-  container:
+  containers:
   - name: a1
     image: redis
