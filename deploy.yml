@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pr
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: or
+  template:
+    metadata:
+      name: opod
+      labels:
+        app: or
+    spec:
+      containers:
+      - name: ocon
+        image: nginx
